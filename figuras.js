@@ -88,3 +88,54 @@ function areaCirculo(radio){
 }
 
 console.groupEnd();
+
+function mostrar(inner){
+    const parrafo = document.getElementById("mensaje");
+    parrafo.innerHTML = inner;
+}
+
+function calcularPerimetroCuadrado(){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+
+   const perimetro = perimetroCuadrado(value);
+   mostrar("El perimetro del cuadrado es de: " + perimetro + " cm");
+}
+
+function calcularAreaCuadrado(){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+
+   const perimetro = areaCuadrado(value);
+   mostrar("El area del cuadrado es de: " + perimetro + " cm");
+}
+
+function calcularPerimetroTriangulo(){
+    const input1 = document.getElementById("inputTriangulo1");
+    const input2 = document.getElementById("inputTriangulo2");
+    const input3 = document.getElementById("inputTriangulo3");
+    
+
+    const resultado = input1.value + input2.value + input3.value;
+
+    mostrar("El perimetro del triangulo es: " + resultado + " cm");
+}
+
+function calcularAreaTriangulo(){
+    const base = document.getElementById("inputTriangulo3");
+    const altura = document.getElementById("inputTriangulo4");
+    const resultado = (base.value * altura.value) / 2;
+    mostrar("El area del triangulo es de: " + resultado + " cm");
+}
+
+//calcular altura triangulo isósceles
+
+function calcularAlturaTriangulo(){
+    const base = document.getElementById("baseTriangulo").value;
+    const lados = document.getElementById("ladosTriangulo").value;
+
+    const preResultado = (lados * lados) - ((base * base)/4);
+    const resultado = Math.sqrt(preResultado);
+
+    mostrar("La altura del triangulo isósceles es de: " + resultado)
+}

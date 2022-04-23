@@ -1,0 +1,46 @@
+*{margin:0;padding: 0;}
+html{box-sizing: border-box;}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    padding: 16px;
+    background-color: #f1f1f1;
+}
+
+.box{
+    margin:15px;
+    border:solid #ccc 1px;
+    padding: 16px;
+    border-radius: 14px;
+}
+
+input[type=number]{
+    border:none;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    padding: 4px;
+    border: solid 1px transparent;
+}
+
+input[type=number]:focus{
+    border: solid 1px rgb(138, 197, 155);
+    outline: none;
+}
+
+button{
+    background-color: rgb(138, 197, 155);
+    border-radius: 4px;
+    border: solid rgb(106, 151, 119) 1px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+button:hover{background-color: rgb(188, 222, 198);}
+button:active{background-color: rgb(106, 151, 119);}
+
+.triangulo label{
+    display: block;
+    margin-top:16px;
+}
