@@ -16,7 +16,7 @@ header{
     border-radius: 14px;
 }
 
-input[type=number]{
+input[type=number], input[type=text]{
     border:none;
     background-color: #f1f1f1;
     border-radius: 4px;
@@ -24,7 +24,7 @@ input[type=number]{
     border: solid 1px transparent;
 }
 
-input[type=number]:focus{
+input[type=number]:focus, input[type=text]:focus{
     border: solid 1px rgb(138, 197, 155);
     outline: none;
 }
