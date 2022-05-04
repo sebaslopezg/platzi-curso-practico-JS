@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de porcentajes</title>
+    <link rel="stylesheet" href="calculadora_porcentajes.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de porcentajes</h1>
+    </header>
+    <section class="box calculadora1">
+        <h2>Calculadora 1</h2>
+        <p><strong>Descripción: </strong>calcular el porcentaje de una cantidad dada.</p>
+        <br>
+        <p>El <input id="porcentajeC1" type="number">% de <input id="numeroC1" type="number"> es <input id="resultadoC1" readonly type="number" value=""></p>
+        <br>
+        <button onclick="calcularC1()"><strong>Calcular</strong></button>
+    </section>
+
+    <section class="box calculadora2">
+        <h2>Calculadora 2</h2>
+        <p><strong>Descripción: </strong>calcular el total conociendo un porcentaje.</p>
+        <br>
+        <p>Si el <input id="porcentajeC2" type="number">% es <input id="numeroC2" type="number">, entonces el total es 
+        <input id="resultadoC2" readonly type="number" value=""></p>
+        <br>
+        <button onclick="calcularC2()"><strong>Calcular</strong></button>
+    </section>
+
+    <section class="box calculadora3">
+        <h2>Calculadora 3</h2>
+        <p><strong>Descripción: </strong>calcular qué porcentaje del total es una cantidad.</p>
+        <br>
+        <p>Si el total es <input id="numeroAC3" type="number">, entonces <input id="numeroBC3" type="number"> es el 
+        <input id="resultadoC3" readonly type="number" value="">%</p>
+        <br>
+        <button onclick="calcularC3()"><strong>Calcular</strong></button>
+    </section>
+
+    <section class="box calculadora4">
+        <h2>Calculadora 4</h2>
+        <p><strong>Descripción: </strong>calcular un porcentaje a partir de otro porcentaje.</p>
+        <br>
+        <p>
+            si el <input id="numeroAC4" type="number">% es <input id="numeroBC4" type="number">, entonces el <input type="number" id="numeroCC4">% 
+            es <input id="resultadoC4" readonly type="number" value="">
+        </p>
+        <br>
+        <button onclick="calcularC4()"><strong>Calcular</strong></button>
+    </section>
+
+    <script src="calculadora_porcentajes.js"></script>
+</body>
+</html>
