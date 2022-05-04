@@ -44,3 +44,4 @@ function calcularC4(){
 }
 
 //pendiente calculadora 5, 6 y 7
+//hola
