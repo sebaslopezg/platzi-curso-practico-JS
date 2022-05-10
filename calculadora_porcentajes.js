@@ -44,4 +44,29 @@ function calcularC4(){
 }
 
 //pendiente calculadora 5, 6 y 7
-//hola
+
+function calcularC5(){
+    const numeroA = getId("numeroAC5").value;
+    const numeroB = getId("numeroBC5").value;  
+    const campoResultado = getId("resultadoC5");
+
+    const resultado = (numeroA * (100 - numeroB)) / 100;
+
+    campoResultado.value = resultado;
+}
+
+//Problema con esta funcion solucionar
+
+function calcularC6(){
+    const numeroA = getId("numeroAC6").value;
+    const numeroB = getId("numeroBC6").value;  
+    const campoResultado = getId("resultadoC6");
+
+    const preResultado = ((100 + numeroB) * numeroA);
+    const resultado = preResultado / 100;
+
+    campoResultado.value = resultado;
+
+    return console.log("Numero A: " + numeroA + ", Numero B: " + numeroB + "preResultado: " + preResultado + "Resultado: " + resultado);
+}
+
